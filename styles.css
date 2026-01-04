@@ -124,6 +124,45 @@ body {
     transition: 0.3s;
 }
 
+.nav-cta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.nav-github {
+    color: var(--primary);
+    border: 1px solid rgba(0, 217, 255, 0.3);
+}
+
+.nav-github:hover {
+    background: rgba(0, 217, 255, 0.1);
+    border-color: var(--primary);
+}
+
+.nav-primary {
+    background: var(--gradient);
+    color: var(--bg-darker);
+}
+
+.nav-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
     min-height: 100vh;
@@ -393,10 +432,36 @@ section {
     margin-top: 1rem;
 }
 
+.about-description h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
 .about-description p {
     color: var(--text-dark);
     margin-bottom: 1rem;
     line-height: 1.8;
+}
+
+.about-cta {
+    margin-top: 2rem;
+}
+
+.about-link {
+    display: inline-block;
+    background: var(--gradient);
+    color: var(--bg-darker);
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.about-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 217, 255, 0.3);
 }
 
 .timeline-preview h4 {
@@ -655,6 +720,29 @@ section {
     color: var(--text-dark);
     line-height: 1.6;
     margin-bottom: 1.5rem;
+}
+
+.project-case-study {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(0, 217, 255, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+}
+
+.case-study-box {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.case-study-box strong {
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .project-highlights {
@@ -1111,6 +1199,10 @@ section {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+    }
+
+    .nav-cta {
+        display: none;
     }
 
     .nav-links {
