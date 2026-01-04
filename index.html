@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emefa Capo - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-chart-line"></i>
+            <span>EMEFA CAPO</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Dashboard</a></li>
+            <li><a href="#about">Profil</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Data Dashboard Style -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="data-label">DATA ANALYST PORTFOLIO</div>
+            <h1 class="glitch" data-text="Emefa Capo">Emefa Capo</h1>
+            <p class="subtitle">Alternante Data Analyst | IA & Big Data</p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Mois d'expérience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">Projets majeurs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-chart-bar"></i> Explorer mes projets
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Me contacter
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <canvas id="dataVisualization"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span> Profil
+                <div class="title-line"></div>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Emefa Capo</h3>
+                                <p class="profile-status">
+                                    <span class="status-dot"></span>
+                                    Disponible immédiatement
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>20 ans</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Île-de-France, France</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>emefa.capo@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Rythme : 3 semaines / 1 semaine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-description">
+                        <p>Étudiante passionnée par la <strong>Data Science</strong>, l'<strong>Intelligence Artificielle</strong> et le <strong>Big Data</strong>, je recherche une alternance pour mettre en pratique mes compétences analytiques et techniques.</p>
+                        <p>Mon parcours combine développement full-stack et analyse de données, me permettant d'avoir une vision complète du cycle de vie des données : de la collecte à la visualisation, en passant par le traitement et l'analyse.</p>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="timeline-preview">
+                        <h4><i class="fas fa-graduation-cap"></i> Formation actuelle</h4>
+                        <div class="formation-card">
+                            <div class="formation-year">2025-2026</div>
+                            <div class="formation-content">
+                                <h5>Bachelor IA & Big Data</h5>
+                                <p>ESGI Paris</p>
+                                <div class="formation-modules">
+                                    <span class="module-tag">Deep Learning</span>
+                                    <span class="module-tag">Big Data & Cloud</span>
+                                    <span class="module-tag">Spark</span>
+                                    <span class="module-tag">Scala</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span> Expériences
+                <div class="title-line"></div>
+            </h2>
+            <div class="experience-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">Sept 2024 - Juil 2025 (10 mois)</div>
+                        <h3>Alternante Développeuse Full Stack</h3>
+                        <h4><i class="fas fa-building"></i> Nyx Corp - Lyon</h4>
+                        <ul class="timeline-details">
+                            <li><i class="fas fa-code"></i> Conception d'une application web en PHP/Symfony pour centraliser la gestion des projets</li>
+                            <li><i class="fas fa-plug"></i> Intégration de l'API GitHub et automatisation du déploiement</li>
+                            <li><i class="fas fa-docker"></i> Utilisation de GitHub Actions et Docker pour la CI/CD</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>PHP</span>
+                            <span>Symfony</span>
+                            <span>Docker</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">Mai 2024 - Juil 2024 (2 mois)</div>
+                        <h3>Stagiaire Marketing Digital</h3>
+                        <h4><i class="fas fa-building"></i> L'Enjeux - Lyon</h4>
+                        <ul class="timeline-details">
+                            <li><i class="fas fa-chart-line"></i> Analyse des performances SEO et du trafic (Google Analytics, Search Console)</li>
+                            <li><i class="fas fa-table"></i> Extraction, traitement et visualisation de données : création de dashboards</li>
+                            <li><i class="fas fa-file-alt"></i> Production d'un guide d'analyse incluant prévisions et recommandations</li>
+                            <li><i class="fas fa-search"></i> Audit SEO complet : analyse technique, contenu, mots-clés</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Google Analytics</span>
+                            <span>SEO</span>
+                            <span>Data Viz</span>
+                            <span>Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span> Projets
+                <div class="title-line"></div>
+            </h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> Tous
+                </button>
+                <button class="filter-btn" data-filter="data">
+                    <i class="fas fa-chart-pie"></i> Data Analysis
+                </button>
+                <button class="filter-btn" data-filter="ai">
+                    <i class="fas fa-brain"></i> Intelligence Artificielle
+                </button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="data" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">Nov 2025 - Jan 2026</span>
+                            <span class="project-status">En cours</span>
+                        </div>
+                    </div>
+                    <h3>Analyse Comparative du Secteur Bancaire</h3>
+                    <p class="project-description">
+                        Étude financière automatisée comparant BNP Paribas, Société Générale et Crédit Agricole via yfinance.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-database"></i>
+                            <span>Extraction & structuration de données financières</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calcul de ratios (leverage, rentabilité...)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-area"></i>
+                            <span>Visualisations de tendances et insights métier</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>yfinance</span>
+                        <span>Jupyter</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ilocapo" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">Sept 2025 - Jan 2026</span>
+                            <span class="project-status">Terminé</span>
+                        </div>
+                    </div>
+                    <h3>Jeu Awalé Intelligent avec IA</h3>
+                    <p class="project-description">
+                        Développement d'un jeu Awalé avec architecture IA hybride combinant algorithmes classiques et apprentissage profond.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Architecture IA hybride : Minimax + DQN (PyTorch)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Environnement d'entraînement pour RL</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-desktop"></i>
+                            <span>Interface graphique avec Pygame</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>Minimax</span>
+                        <span>DQN</span>
+                        <span>Pygame</span>
+                        <span>OOP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ilocapo" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span> Compétences
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="skills-dashboard">
+                <div class="skills-chart-container">
+                    <h3><i class="fas fa-chart-pie"></i> Répartition des Compétences</h3>
+                    <canvas id="skillsChart"></canvas>
+                </div>
+
+                <div class="skills-categories">
+                    <div class="skill-category" data-aos="fade-up">
+                        <div class="category-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Langages & Environnement</h4>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Linux / Windows</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <i class="fas fa-database"></i>
+                            <h4>Data Science & Analysis</h4>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Pandas / NumPy</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Matplotlib</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Tableau</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Power BI</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <i class="fas fa-cloud"></i>
+                            <h4>Big Data & DevOps</h4>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Git / GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Spark / Scala</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certifications">
+                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h4>Python pour la Data Science</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h4>Objectif IA : Initiez-vous à l'IA</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span> Contact
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Parlons de votre projet !</h3>
+                    <p>Je suis actuellement à la recherche d'une alternance en tant que Data Analyst. N'hésitez pas à me contacter pour discuter de vos besoins.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:emefa.capo@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>emefa.capo@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/emefacapo/" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/emefacapo</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/ilocapo" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>GitHub</h4>
+                                <p>github.com/ilocapo</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="availability-card">
+                        <div class="availability-header">
+                            <i class="fas fa-calendar-check"></i>
+                            <h4>Disponibilité</h4>
+                        </div>
+                        <div class="availability-details">
+                            <div class="availability-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Disponible immédiatement</span>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Rythme : 3 semaines / 1 semaine</span>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Île-de-France</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-visual">
+                    <div class="data-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">data_analyst.py</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">import pandas as pd</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">from emefa import skills, experience</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">analyst = DataAnalyst(name="Emefa Capo")</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">analyst.search_internship()</span>
+                            </div>
+                            <div class="terminal-output">
+                                <span class="output-text">>> Searching for opportunities...</span>
+                            </div>
+                            <div class="terminal-output">
+                                <span class="output-success">✓ Ready to analyze your data!</span>
+                            </div>
+                            <div class="terminal-cursor"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Conçu et développé par Emefa Capo</p>
+                    <p class="footer-tech">Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ilocapo" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/emefacapo/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:emefa.capo@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Emefa Capo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
