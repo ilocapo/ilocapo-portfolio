@@ -224,7 +224,15 @@ filterButtons.forEach(button => {
 // ===== SKILLS CHART =====
 const createSkillsChart = () => {
     const ctx = document.getElementById('skillsChart');
-    if (!ctx) return;
+    if (!ctx) {
+        console.log('Canvas skillsChart introuvable');
+        return;
+    }
+
+    if (typeof Chart === 'undefined') {
+        console.log('Chart.js non chargé');
+        return;
+    }
 
     new Chart(ctx, {
         type: 'doughnut',
@@ -280,14 +288,22 @@ const createSkillsChart = () => {
             }
         }
     });
+    
+    console.log('Graphique des compétences créé avec succès');
 };
 
-// Créer le graphique quand Chart.js est chargé
-if (typeof Chart !== 'undefined') {
-    createSkillsChart();
-} else {
-    window.addEventListener('load', createSkillsChart);
-}
+// Attendre que Chart.js ET le DOM soient chargés
+document.addEventListener('DOMContentLoaded', () => {
+    // Vérifier si Chart.js est déjà chargé
+    if (typeof Chart !== 'undefined') {
+        createSkillsChart();
+    } else {
+        // Sinon attendre que le script Chart.js se charge
+        window.addEventListener('load', () => {
+            setTimeout(createSkillsChart, 100);
+        });
+    }
+});
 
 // ===== SKILL BARS ANIMATION =====
 function animateSkillBars() {
