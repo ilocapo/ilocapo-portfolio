@@ -462,14 +462,21 @@ section {
 }
 
 .about-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
     background: var(--gradient);
     color: var(--bg-darker);
-    padding: 0.8rem 1.8rem;
+    padding: 0.9rem 2rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.about-link i {
+    font-size: 1.1rem;
 }
 
 .about-link:hover {
@@ -756,6 +763,36 @@ section {
     color: var(--primary);
     display: block;
     margin-bottom: 0.5rem;
+}
+
+.case-study-box strong i {
+    margin-right: 0.5rem;
+    color: var(--accent);
+}
+
+/* ===== PROJECT LINKS ===== */
+.project-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s, color 0.3s;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+}
+
+.project-link:hover {
+    transform: translateX(5px);
+    color: var(--text-light);
+    background: rgba(0, 217, 255, 0.1);
+    border-color: var(--primary);
+}
+
+.project-link i {
+    font-size: 0.95rem;
 }
 
 .project-highlights {
